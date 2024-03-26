@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:black;
+    overflow: hidden;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    display: flex;
+    color: red;
+    background-color: rgb(37, 37, 37);
+    justify-content: space-between;
+    padding: 5px 20px;
+    animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+nav li:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white,0 0 20px white;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.contant{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: contant 2s ease-in-out;
+}
+@keyframes contant{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+.contant h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+.contant h2{
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+.contant p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 5%;
+    color: rgb(63, 63, 245);
+}
+button{
+    padding: 10px 50px;
+    background-color: rgb(177, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color:rgb(2, 2, 133);
+    box-shadow: 0 0 5px rgb(247, 247, 248),0 0 10px rgb(236, 236, 238),0 0 15px rgb(2, 2, 134),0 0 20px rgb(2, 2, 134);
+}
+.image1{
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;
+}
+.car{
+    width: 40rem;
+    animation: car 4s ease-in-out;
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-220%);
+    }
+}
+@media screen and (max-width:1200px) {
+    .contant{
+        width:100%;
+        text-align: center;
+    }
+    .image1{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+    .car{
+        width: 20rem;
+    }
+}
+@media screen and (max-width:576px) {
+    .contant{
+        width:100%;
+        text-align: center;
+    }
+    .contant h1{
+        margin-bottom: 5%;
+    }
+    .contant p{
+        margin-bottom: 5%;
+    }
+    .image1{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+    .car{
+        width: 30rem;
+    }
+    header{
+        padding: 5px 10px;
+    }
+    nav li{
+        margin: 10px 5px;
+        letter-spacing: 0;
+    }
+    nav .icon{
+        margin-left: 10px;
+    }
+}
+.icon{
+   margin: 0%;
+   width: 25px;
+   position: relative;
+   top: 5px;
+   float: right;
+   border-radius: 100px;
+   transition: 0.2s;
+}
+.icon:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white,;
+}
